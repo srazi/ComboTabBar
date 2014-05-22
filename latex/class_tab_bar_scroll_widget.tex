@@ -1,0 +1,233 @@
+\hypertarget{class_tab_bar_scroll_widget}{
+\section{TabBarScrollWidget Class Reference}
+\label{class_tab_bar_scroll_widget}\index{TabBarScrollWidget@{TabBarScrollWidget}}
+}
+
+
+Adds scrolling feature to \hyperlink{class_q_tab_bar}{QTabBar}.  
+
+
+
+
+{\ttfamily \#include $<$combotabbar.h$>$}
+
+Inheritance diagram for TabBarScrollWidget:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_tab_bar_scroll_widget}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_tab_bar_scroll_widget_a05bdaea447574f7fb718cd353e98400b}{ensureVisible} (int index=-\/1, int xmargin=132)
+\item 
+void \hyperlink{class_tab_bar_scroll_widget_a525f4d6a01724eab689c59e35a134789}{scrollToLeft} (int n=5, QEasingCurve::Type type=QEasingCurve::OutQuad)
+\item 
+void \hyperlink{class_tab_bar_scroll_widget_aae5b0963318e3b84a301df74fcfceb3e}{scrollToRight} (int n=5, QEasingCurve::Type type=QEasingCurve::OutQuad)
+\item 
+void \hyperlink{class_tab_bar_scroll_widget_aef9cc5e3e46b87fa9a039e62cdadc999}{scrollToLeftEdge} ()
+\item 
+void \hyperlink{class_tab_bar_scroll_widget_a8c700b63b084d5fec121ff07061763f6}{scrollToRightEdge} ()
+\item 
+\hypertarget{class_tab_bar_scroll_widget_aa3803469255e43631cc765f42b48f5b8}{
+void {\bfseries setUpLayout} ()}
+\label{class_tab_bar_scroll_widget_aa3803469255e43631cc765f42b48f5b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_scroll_widget_ac9f5578f01099a3f0b07ffebf79be736}{
+{\bfseries TabBarScrollWidget} (\hyperlink{class_q_tab_bar}{QTabBar} $\ast$tabBar, \hyperlink{class_q_widget}{QWidget} $\ast$parent=0)}
+\label{class_tab_bar_scroll_widget_ac9f5578f01099a3f0b07ffebf79be736}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a8cdb56dbc58327427e8283d563558ab2}{
+\hyperlink{class_q_tab_bar}{QTabBar} $\ast$ {\bfseries tabBar} ()}
+\label{class_tab_bar_scroll_widget_a8cdb56dbc58327427e8283d563558ab2}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_af3bb9c0713ded8308611e198f834fda1}{
+QScrollArea $\ast$ {\bfseries scrollArea} ()}
+\label{class_tab_bar_scroll_widget_af3bb9c0713ded8308611e198f834fda1}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a850f2ea062974be7be1f6b58761a8a79}{
+\hyperlink{class_tab_scroll_bar}{TabScrollBar} $\ast$ {\bfseries scrollBar} ()}
+\label{class_tab_bar_scroll_widget_a850f2ea062974be7be1f6b58761a8a79}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a9d361a6291b10a23c1545a8101e562c3}{
+void {\bfseries scrollByWheel} (QWheelEvent $\ast$event)}
+\label{class_tab_bar_scroll_widget_a9d361a6291b10a23c1545a8101e562c3}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_ad5154497fc810c2129bcdce8bd0f4725}{
+int {\bfseries scrollButtonsWidth} () const }
+\label{class_tab_bar_scroll_widget_ad5154497fc810c2129bcdce8bd0f4725}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_af7bf35a9970590eef45fafb19cb3931f}{
+bool {\bfseries usesScrollButtons} () const }
+\label{class_tab_bar_scroll_widget_af7bf35a9970590eef45fafb19cb3931f}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a0a95792b2d0aad18ac5929afc5197414}{
+void {\bfseries setUsesScrollButtons} (bool useButtons)}
+\label{class_tab_bar_scroll_widget_a0a95792b2d0aad18ac5929afc5197414}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_acefc10337736ee7b075e27ad53dd2441}{
+bool {\bfseries isOverflowed} () const }
+\label{class_tab_bar_scroll_widget_acefc10337736ee7b075e27ad53dd2441}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a6ea868a68da8ecf19a970c3a8e8bf8cc}{
+int {\bfseries tabAt} (const QPoint \&pos) const }
+\label{class_tab_bar_scroll_widget_a6ea868a68da8ecf19a970c3a8e8bf8cc}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_ae850dc2df1840e30e2bf3220a473419c}{
+void {\bfseries enableBluredBackground} (bool enable)}
+\label{class_tab_bar_scroll_widget_ae850dc2df1840e30e2bf3220a473419c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_scroll_widget_aa2df438b67f0f1ab1b5720b2fa8e2dc0}{
+void {\bfseries overFlowChanged} (bool overflowed)}
+\label{class_tab_bar_scroll_widget_aa2df438b67f0f1ab1b5720b2fa8e2dc0}
+
+\item 
+void \hyperlink{class_tab_bar_scroll_widget_a05a239bfcf3fe7853b75dd8366132406}{scrollStart} ()
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a1ad0599b9615485b62f4630c01379ba5}{
+void {\bfseries updateScrollButtonsState} ()}
+\label{class_tab_bar_scroll_widget_a1ad0599b9615485b62f4630c01379ba5}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a31dce9b238060a7c0355d7d14100cb24}{
+void {\bfseries mouseMoveEvent} (QMouseEvent $\ast$event)}
+\label{class_tab_bar_scroll_widget_a31dce9b238060a7c0355d7d14100cb24}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a02deb9f280753efe681a14d047da4f63}{
+void {\bfseries resizeEvent} (QResizeEvent $\ast$event)}
+\label{class_tab_bar_scroll_widget_a02deb9f280753efe681a14d047da4f63}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a7d2f788208ded4cfa19a8771822a225e}{
+\hyperlink{class_q_tab_bar}{QTabBar} $\ast$ {\bfseries m\_\-tabBar}}
+\label{class_tab_bar_scroll_widget_a7d2f788208ded4cfa19a8771822a225e}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_aad4c2d106207378354e296a8aa3b0da9}{
+QScrollArea $\ast$ {\bfseries m\_\-scrollArea}}
+\label{class_tab_bar_scroll_widget_aad4c2d106207378354e296a8aa3b0da9}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a6541eebd7a4b72fa656d721e34d92c8a}{
+\hyperlink{class_tab_scroll_bar}{TabScrollBar} $\ast$ {\bfseries m\_\-scrollBar}}
+\label{class_tab_bar_scroll_widget_a6541eebd7a4b72fa656d721e34d92c8a}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a830c235df1e193a473aa732f0eccc62b}{
+ToolButton $\ast$ {\bfseries m\_\-rightScrollButton}}
+\label{class_tab_bar_scroll_widget_a830c235df1e193a473aa732f0eccc62b}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a9aef94590ad92d0500aac2317a61f22c}{
+ToolButton $\ast$ {\bfseries m\_\-leftScrollButton}}
+\label{class_tab_bar_scroll_widget_a9aef94590ad92d0500aac2317a61f22c}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a04d28c33b65d33b253367838da438707}{
+bool {\bfseries m\_\-usesScrollButtons}}
+\label{class_tab_bar_scroll_widget_a04d28c33b65d33b253367838da438707}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a5e4e96c4df52961d0dc928da8c7f63f7}{
+bool {\bfseries m\_\-bluredBackground}}
+\label{class_tab_bar_scroll_widget_a5e4e96c4df52961d0dc928da8c7f63f7}
+
+\item 
+\hypertarget{class_tab_bar_scroll_widget_a17714d4a6564ba0c61c074f99836cfa8}{
+int {\bfseries m\_\-totalDeltas}}
+\label{class_tab_bar_scroll_widget_a17714d4a6564ba0c61c074f99836cfa8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Adds scrolling feature to \hyperlink{class_q_tab_bar}{QTabBar}. It has a horizontal layout containing: m\_\-leftScrollButton $|$ m\_\-scrollArea $|$ m\_\-rightScrollButton
+
+m\_\-scrollArea is a QScrollArea with a \hyperlink{class_tab_bar_helper}{TabBarHelper} as its widget, and it uses a \hyperlink{class_tab_scroll_bar}{TabScrollBar} as its horizontal scrollbar 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tab_bar_scroll_widget_a05bdaea447574f7fb718cd353e98400b}{
+\index{TabBarScrollWidget@{TabBarScrollWidget}!ensureVisible@{ensureVisible}}
+\index{ensureVisible@{ensureVisible}!TabBarScrollWidget@{TabBarScrollWidget}}
+\subsubsection[{ensureVisible}]{\setlength{\rightskip}{0pt plus 5cm}void TabBarScrollWidget::ensureVisible (int {\em index} = {\ttfamily -\/1}, \/  int {\em xmargin} = {\ttfamily 132})\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_tab_bar_scroll_widget_a05bdaea447574f7fb718cd353e98400b}
+
+
+scrolls to index or currentIndex() if index is -\/1 (default) 
+
+\hypertarget{class_tab_bar_scroll_widget_a05a239bfcf3fe7853b75dd8366132406}{
+\index{TabBarScrollWidget@{TabBarScrollWidget}!scrollStart@{scrollStart}}
+\index{scrollStart@{scrollStart}!TabBarScrollWidget@{TabBarScrollWidget}}
+\subsubsection[{scrollStart}]{\setlength{\rightskip}{0pt plus 5cm}void TabBarScrollWidget::scrollStart ()\hspace{0.3cm}{\ttfamily  \mbox{[}private, slot\mbox{]}}}}
+\label{class_tab_bar_scroll_widget_a05a239bfcf3fe7853b75dd8366132406}
+
+
+used for non-\/stop linear scrolling when mouse is pressed on scroll buttons 
+
+\hypertarget{class_tab_bar_scroll_widget_a525f4d6a01724eab689c59e35a134789}{
+\index{TabBarScrollWidget@{TabBarScrollWidget}!scrollToLeft@{scrollToLeft}}
+\index{scrollToLeft@{scrollToLeft}!TabBarScrollWidget@{TabBarScrollWidget}}
+\subsubsection[{scrollToLeft}]{\setlength{\rightskip}{0pt plus 5cm}void TabBarScrollWidget::scrollToLeft (int {\em n} = {\ttfamily 5}, \/  QEasingCurve::Type {\em type} = {\ttfamily QEasingCurve::OutQuad})\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_tab_bar_scroll_widget_a525f4d6a01724eab689c59e35a134789}
+
+
+scrolls to smaller values by n singleStep() 
+
+\hypertarget{class_tab_bar_scroll_widget_aef9cc5e3e46b87fa9a039e62cdadc999}{
+\index{TabBarScrollWidget@{TabBarScrollWidget}!scrollToLeftEdge@{scrollToLeftEdge}}
+\index{scrollToLeftEdge@{scrollToLeftEdge}!TabBarScrollWidget@{TabBarScrollWidget}}
+\subsubsection[{scrollToLeftEdge}]{\setlength{\rightskip}{0pt plus 5cm}void TabBarScrollWidget::scrollToLeftEdge ()\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_tab_bar_scroll_widget_aef9cc5e3e46b87fa9a039e62cdadc999}
+
+
+scrolls to minimum using QEasingCurve::OutQuad 
+
+\hypertarget{class_tab_bar_scroll_widget_aae5b0963318e3b84a301df74fcfceb3e}{
+\index{TabBarScrollWidget@{TabBarScrollWidget}!scrollToRight@{scrollToRight}}
+\index{scrollToRight@{scrollToRight}!TabBarScrollWidget@{TabBarScrollWidget}}
+\subsubsection[{scrollToRight}]{\setlength{\rightskip}{0pt plus 5cm}void TabBarScrollWidget::scrollToRight (int {\em n} = {\ttfamily 5}, \/  QEasingCurve::Type {\em type} = {\ttfamily QEasingCurve::OutQuad})\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_tab_bar_scroll_widget_aae5b0963318e3b84a301df74fcfceb3e}
+
+
+scrolls to bigger values by n singleStep() 
+
+\hypertarget{class_tab_bar_scroll_widget_a8c700b63b084d5fec121ff07061763f6}{
+\index{TabBarScrollWidget@{TabBarScrollWidget}!scrollToRightEdge@{scrollToRightEdge}}
+\index{scrollToRightEdge@{scrollToRightEdge}!TabBarScrollWidget@{TabBarScrollWidget}}
+\subsubsection[{scrollToRightEdge}]{\setlength{\rightskip}{0pt plus 5cm}void TabBarScrollWidget::scrollToRightEdge ()\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_tab_bar_scroll_widget_a8c700b63b084d5fec121ff07061763f6}
+
+
+scrolls to maximum using QEasingCurve::OutQuad 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+E:/Programming/QupZilla-\/Project/qupzilla/src/lib/tabwidget/combotabbar.h\end{DoxyCompactItemize}

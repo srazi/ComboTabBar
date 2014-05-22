@@ -1,0 +1,201 @@
+\hypertarget{class_tab_stacked_widget}{
+\section{TabStackedWidget Class Reference}
+\label{class_tab_stacked_widget}\index{TabStackedWidget@{TabStackedWidget}}
+}
+Inheritance diagram for TabStackedWidget:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_tab_stacked_widget}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_stacked_widget_a74183fe7bd0f0ff5fcc57ba1435236cc}{
+void {\bfseries setCurrentIndex} (int index)}
+\label{class_tab_stacked_widget_a74183fe7bd0f0ff5fcc57ba1435236cc}
+
+\item 
+\hypertarget{class_tab_stacked_widget_ae8779463e03448a6336006e23944a534}{
+void {\bfseries setCurrentWidget} (\hyperlink{class_q_widget}{QWidget} $\ast$widget)}
+\label{class_tab_stacked_widget_ae8779463e03448a6336006e23944a534}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a3b3cba2736761f0ef10ef15e50904f33}{
+void {\bfseries setUpLayout} ()}
+\label{class_tab_stacked_widget_a3b3cba2736761f0ef10ef15e50904f33}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_stacked_widget_a9378f9c896957d9bb37bc6fdc180981c}{
+void {\bfseries currentChanged} (int index)}
+\label{class_tab_stacked_widget_a9378f9c896957d9bb37bc6fdc180981c}
+
+\item 
+\hypertarget{class_tab_stacked_widget_af615c93acb887e3291a705935b87fb86}{
+void {\bfseries tabCloseRequested} (int index)}
+\label{class_tab_stacked_widget_af615c93acb887e3291a705935b87fb86}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_stacked_widget_af74e31a77c3b4fc04a8444ac3c8a2f14}{
+{\bfseries TabStackedWidget} (\hyperlink{class_q_widget}{QWidget} $\ast$parent=0)}
+\label{class_tab_stacked_widget_af74e31a77c3b4fc04a8444ac3c8a2f14}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a354c44a4559ef1c7d40672cd7de5c45c}{
+\hyperlink{class_combo_tab_bar}{ComboTabBar} $\ast$ {\bfseries tabBar} ()}
+\label{class_tab_stacked_widget_a354c44a4559ef1c7d40672cd7de5c45c}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a61e38c15cd94e9a26c2fbfaea33f1f68}{
+void {\bfseries setTabBar} (\hyperlink{class_combo_tab_bar}{ComboTabBar} $\ast$tb)}
+\label{class_tab_stacked_widget_a61e38c15cd94e9a26c2fbfaea33f1f68}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a16e2efde830506e8d5d7e4c7cc051d38}{
+bool {\bfseries documentMode} () const }
+\label{class_tab_stacked_widget_a16e2efde830506e8d5d7e4c7cc051d38}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a5664687a2ebd33508410362764f587a3}{
+void {\bfseries setDocumentMode} (bool enabled)}
+\label{class_tab_stacked_widget_a5664687a2ebd33508410362764f587a3}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a763e40673682bdfaebd518008a58f1a1}{
+int {\bfseries addTab} (\hyperlink{class_q_widget}{QWidget} $\ast$widget, const QString \&label, bool pinned=false)}
+\label{class_tab_stacked_widget_a763e40673682bdfaebd518008a58f1a1}
+
+\item 
+\hypertarget{class_tab_stacked_widget_ab2a2466ef7ae88f9813f473e6452bd00}{
+int {\bfseries insertTab} (int index, \hyperlink{class_q_widget}{QWidget} $\ast$widget, const QString \&label, bool pinned=false)}
+\label{class_tab_stacked_widget_ab2a2466ef7ae88f9813f473e6452bd00}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a72e1cf12a94bba3216b318efa39d0b09}{
+QString {\bfseries tabText} (int index) const }
+\label{class_tab_stacked_widget_a72e1cf12a94bba3216b318efa39d0b09}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a9eb31d54313fadd7240438f98206343f}{
+void {\bfseries setTabText} (int index, const QString \&label)}
+\label{class_tab_stacked_widget_a9eb31d54313fadd7240438f98206343f}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a38c74726adf08931c0035f5232d993b2}{
+QString {\bfseries tabToolTip} (int index) const }
+\label{class_tab_stacked_widget_a38c74726adf08931c0035f5232d993b2}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a695722b14055d2cf2db50cc1ac44796c}{
+void {\bfseries setTabToolTip} (int index, const QString \&tip)}
+\label{class_tab_stacked_widget_a695722b14055d2cf2db50cc1ac44796c}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a189fe7535ae814fdf43ba1abff94678c}{
+int {\bfseries pinUnPinTab} (int index, const QString \&title=QString())}
+\label{class_tab_stacked_widget_a189fe7535ae814fdf43ba1abff94678c}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a3c2ace9ea78144c9fbbce3bf0a299e89}{
+void {\bfseries removeTab} (int index)}
+\label{class_tab_stacked_widget_a3c2ace9ea78144c9fbbce3bf0a299e89}
+
+\item 
+\hypertarget{class_tab_stacked_widget_ab9b45fb1c0872f2f674a8f1d4c00c945}{
+int {\bfseries currentIndex} () const }
+\label{class_tab_stacked_widget_ab9b45fb1c0872f2f674a8f1d4c00c945}
+
+\item 
+\hypertarget{class_tab_stacked_widget_ab630369d144ed5bf9df432dba8a49e3d}{
+\hyperlink{class_q_widget}{QWidget} $\ast$ {\bfseries currentWidget} () const }
+\label{class_tab_stacked_widget_ab630369d144ed5bf9df432dba8a49e3d}
+
+\item 
+\hypertarget{class_tab_stacked_widget_ae178d95c603dec72c09f49ed2ed39761}{
+\hyperlink{class_q_widget}{QWidget} $\ast$ {\bfseries widget} (int index) const }
+\label{class_tab_stacked_widget_ae178d95c603dec72c09f49ed2ed39761}
+
+\item 
+\hypertarget{class_tab_stacked_widget_ae67cadc2b20fbfd520305ba57d3d1f32}{
+int {\bfseries indexOf} (\hyperlink{class_q_widget}{QWidget} $\ast$widget) const }
+\label{class_tab_stacked_widget_ae67cadc2b20fbfd520305ba57d3d1f32}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a235c2b586a7f8ab231acf2e0472ce3ae}{
+int {\bfseries count} () const }
+\label{class_tab_stacked_widget_a235c2b586a7f8ab231acf2e0472ce3ae}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_stacked_widget_a54c4e17b00913256973d890554fab03d}{
+bool {\bfseries eventFilter} (QObject $\ast$obj, QEvent $\ast$event)}
+\label{class_tab_stacked_widget_a54c4e17b00913256973d890554fab03d}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a2ee5e5a190b7c294ecf72e7a75091df8}{
+void {\bfseries keyPressEvent} (QKeyEvent $\ast$event)}
+\label{class_tab_stacked_widget_a2ee5e5a190b7c294ecf72e7a75091df8}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_stacked_widget_a6b1760758e58f1e28762ab1f8bac5eef}{
+void {\bfseries showTab} (int index)}
+\label{class_tab_stacked_widget_a6b1760758e58f1e28762ab1f8bac5eef}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a21355edb24806d536d066b53405af0dc}{
+void {\bfseries tabWasMoved} (int from, int to)}
+\label{class_tab_stacked_widget_a21355edb24806d536d066b53405af0dc}
+
+\item 
+\hypertarget{class_tab_stacked_widget_afb87ed29ff819b1bd3ecea878249a97c}{
+void {\bfseries tabWasRemoved} (int index)}
+\label{class_tab_stacked_widget_afb87ed29ff819b1bd3ecea878249a97c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_stacked_widget_a93ea6c0c29cfe0fa58366726e97a5da2}{
+bool {\bfseries validIndex} (int index) const }
+\label{class_tab_stacked_widget_a93ea6c0c29cfe0fa58366726e97a5da2}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_stacked_widget_a4f7c1e2a129fe25475330ce31a543e20}{
+QStackedWidget $\ast$ {\bfseries m\_\-stack}}
+\label{class_tab_stacked_widget_a4f7c1e2a129fe25475330ce31a543e20}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a70ba27bb0c4b3499eb6484f4e1532fde}{
+\hyperlink{class_combo_tab_bar}{ComboTabBar} $\ast$ {\bfseries m\_\-tabBar}}
+\label{class_tab_stacked_widget_a70ba27bb0c4b3499eb6484f4e1532fde}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a11003c41b44f06a5248939be3a2ed5f1}{
+QVBoxLayout $\ast$ {\bfseries m\_\-mainLayout}}
+\label{class_tab_stacked_widget_a11003c41b44f06a5248939be3a2ed5f1}
+
+\item 
+\hypertarget{class_tab_stacked_widget_a502d1a8effcefef8a899ed85f945e60b}{
+bool {\bfseries m\_\-dirtyTabBar}}
+\label{class_tab_stacked_widget_a502d1a8effcefef8a899ed85f945e60b}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+E:/Programming/QupZilla-\/Project/qupzilla/src/lib/tabwidget/tabstackedwidget.h\end{DoxyCompactItemize}

@@ -1,0 +1,190 @@
+\hypertarget{class_tab_bar_helper}{
+\section{TabBarHelper Class Reference}
+\label{class_tab_bar_helper}\index{TabBarHelper@{TabBarHelper}}
+}
+
+
+A subclass of \hyperlink{class_q_tab_bar}{QTabBar} that can be inactivated.  
+
+
+
+
+{\ttfamily \#include $<$combotabbar.h$>$}
+
+Inheritance diagram for TabBarHelper:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_tab_bar_helper}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_helper_aecf7527d83bce94d0f3b6c985861b003}{
+void {\bfseries setCurrentIndex} (int index)}
+\label{class_tab_bar_helper_aecf7527d83bce94d0f3b6c985861b003}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_helper_af9ced889c0be86aefa08d77a70a44bdd}{
+{\bfseries TabBarHelper} (bool isPinnedTabBar, \hyperlink{class_combo_tab_bar}{ComboTabBar} $\ast$comboTabBar)}
+\label{class_tab_bar_helper_af9ced889c0be86aefa08d77a70a44bdd}
+
+\item 
+\hypertarget{class_tab_bar_helper_a28baa6185f46e5db6880ae25a2802307}{
+void {\bfseries setTabButton} (int index, QTabBar::ButtonPosition position, \hyperlink{class_q_widget}{QWidget} $\ast$widget)}
+\label{class_tab_bar_helper_a28baa6185f46e5db6880ae25a2802307}
+
+\item 
+\hypertarget{class_tab_bar_helper_a730752cb66f05baea1796c694051cb0a}{
+QSize {\bfseries tabSizeHint} (int index) const }
+\label{class_tab_bar_helper_a730752cb66f05baea1796c694051cb0a}
+
+\item 
+\hypertarget{class_tab_bar_helper_ac33cf816a8ed021905044dc04d823c4e}{
+QSize {\bfseries baseClassTabSizeHint} (int index) const }
+\label{class_tab_bar_helper_ac33cf816a8ed021905044dc04d823c4e}
+
+\item 
+\hypertarget{class_tab_bar_helper_abcc45aacfb483444d03f1c9bf3b9ea6f}{
+bool {\bfseries isActiveTabBar} ()}
+\label{class_tab_bar_helper_abcc45aacfb483444d03f1c9bf3b9ea6f}
+
+\item 
+\hypertarget{class_tab_bar_helper_aa93e42dcc138bf87905524ec854bfc3b}{
+void {\bfseries setActiveTabBar} (bool activate)}
+\label{class_tab_bar_helper_aa93e42dcc138bf87905524ec854bfc3b}
+
+\item 
+\hypertarget{class_tab_bar_helper_ae3b64c247a7953682dd1fc53b784d5dc}{
+void {\bfseries removeTab} (int index)}
+\label{class_tab_bar_helper_ae3b64c247a7953682dd1fc53b784d5dc}
+
+\item 
+\hypertarget{class_tab_bar_helper_a11e0dba4a8d1547a2b0ed4898a2573ef}{
+void {\bfseries setScrollArea} (QScrollArea $\ast$scrollArea)}
+\label{class_tab_bar_helper_a11e0dba4a8d1547a2b0ed4898a2573ef}
+
+\item 
+\hypertarget{class_tab_bar_helper_a3dd9da07487a7549d69c80380fc83951}{
+void {\bfseries useFastTabSizeHint} (bool enabled)}
+\label{class_tab_bar_helper_a3dd9da07487a7549d69c80380fc83951}
+
+\item 
+\hypertarget{class_tab_bar_helper_a21dac47e89bca9dc01d515763fe9af37}{
+bool {\bfseries isDisplayedOnViewPort} (int globalLeft, int globalRight)}
+\label{class_tab_bar_helper_a21dac47e89bca9dc01d515763fe9af37}
+
+\item 
+\hypertarget{class_tab_bar_helper_ad9fefe50279cc163e20647dd6ef220c6}{
+bool {\bfseries isDragInProgress} () const }
+\label{class_tab_bar_helper_ad9fefe50279cc163e20647dd6ef220c6}
+
+\item 
+\hypertarget{class_tab_bar_helper_ab071cb66c0d3c64e04bb84859bf45bc2}{
+void {\bfseries enableBluredBackground} (bool enable)}
+\label{class_tab_bar_helper_ab071cb66c0d3c64e04bb84859bf45bc2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_helper_a83a02154b55440c34316916475c40f6a}{
+static void {\bfseries initStyleBaseOption} (QStyleOptionTabBarBaseV2 $\ast$optTabBase, \hyperlink{class_q_tab_bar}{QTabBar} $\ast$tabbar, QSize size)}
+\label{class_tab_bar_helper_a83a02154b55440c34316916475c40f6a}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_helper_a469ac11124af4ebcc9df692197ed2d8f}{
+void {\bfseries resetDragState} ()}
+\label{class_tab_bar_helper_a469ac11124af4ebcc9df692197ed2d8f}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_helper_a12d594e2a22b3b9bdff5092a8a0a1498}{
+bool {\bfseries event} (QEvent $\ast$ev)}
+\label{class_tab_bar_helper_a12d594e2a22b3b9bdff5092a8a0a1498}
+
+\item 
+\hypertarget{class_tab_bar_helper_afc809db42e417bac55eb068e04d13144}{
+void {\bfseries paintEvent} (QPaintEvent $\ast$event)}
+\label{class_tab_bar_helper_afc809db42e417bac55eb068e04d13144}
+
+\item 
+\hypertarget{class_tab_bar_helper_a3eb170e7899a8dad031cefaaa1863582}{
+void {\bfseries mousePressEvent} (QMouseEvent $\ast$event)}
+\label{class_tab_bar_helper_a3eb170e7899a8dad031cefaaa1863582}
+
+\item 
+\hypertarget{class_tab_bar_helper_a76dcb94ae535b73a7150ce37bdcdf6db}{
+void {\bfseries mouseReleaseEvent} (QMouseEvent $\ast$event)}
+\label{class_tab_bar_helper_a76dcb94ae535b73a7150ce37bdcdf6db}
+
+\item 
+\hypertarget{class_tab_bar_helper_adbeb5b404ed3628e52d617cfea276d4c}{
+void {\bfseries initStyleOption} (QStyleOptionTab $\ast$option, int tabIndex) const }
+\label{class_tab_bar_helper_adbeb5b404ed3628e52d617cfea276d4c}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_bar_helper_ad68f4c55033fae83b4671f076fd125ea}{
+\hyperlink{class_combo_tab_bar}{ComboTabBar} $\ast$ {\bfseries m\_\-comboTabBar}}
+\label{class_tab_bar_helper_ad68f4c55033fae83b4671f076fd125ea}
+
+\item 
+\hypertarget{class_tab_bar_helper_a7f47562739959fffe6babbd3fcc5efbf}{
+QScrollArea $\ast$ {\bfseries m\_\-scrollArea}}
+\label{class_tab_bar_helper_a7f47562739959fffe6babbd3fcc5efbf}
+
+\item 
+\hypertarget{class_tab_bar_helper_afee6dac513266d8a3824abcddbcfc25d}{
+int {\bfseries m\_\-pressedIndex}}
+\label{class_tab_bar_helper_afee6dac513266d8a3824abcddbcfc25d}
+
+\item 
+\hypertarget{class_tab_bar_helper_a53e1c831d9bbde1fea5d98ee47c84dd3}{
+int {\bfseries m\_\-pressedGlobalX}}
+\label{class_tab_bar_helper_a53e1c831d9bbde1fea5d98ee47c84dd3}
+
+\item 
+\hypertarget{class_tab_bar_helper_ac38179f236f3afcd8d52b0001b7a270d}{
+bool {\bfseries m\_\-dragInProgress}}
+\label{class_tab_bar_helper_ac38179f236f3afcd8d52b0001b7a270d}
+
+\item 
+\hypertarget{class_tab_bar_helper_a33f915077d8a2413ba81dbc3dd9d255b}{
+bool {\bfseries m\_\-activeTabBar}}
+\label{class_tab_bar_helper_a33f915077d8a2413ba81dbc3dd9d255b}
+
+\item 
+\hypertarget{class_tab_bar_helper_a34ab815584444e6e90a7fd69ce8437db}{
+bool {\bfseries m\_\-isPinnedTabBar}}
+\label{class_tab_bar_helper_a34ab815584444e6e90a7fd69ce8437db}
+
+\item 
+\hypertarget{class_tab_bar_helper_aaa852e84f919925e9397c3f41d74985e}{
+bool {\bfseries m\_\-useFastTabSizeHint}}
+\label{class_tab_bar_helper_aaa852e84f919925e9397c3f41d74985e}
+
+\item 
+\hypertarget{class_tab_bar_helper_a62a14e7652bb52cef5c1dc4b2221d147}{
+bool {\bfseries m\_\-bluredBackground}}
+\label{class_tab_bar_helper_a62a14e7652bb52cef5c1dc4b2221d147}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A subclass of \hyperlink{class_q_tab_bar}{QTabBar} that can be inactivated. 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+E:/Programming/QupZilla-\/Project/qupzilla/src/lib/tabwidget/combotabbar.h\end{DoxyCompactItemize}

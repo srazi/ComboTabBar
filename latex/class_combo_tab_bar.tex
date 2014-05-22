@@ -1,0 +1,681 @@
+\hypertarget{class_combo_tab_bar}{
+\section{ComboTabBar Class Reference}
+\label{class_combo_tab_bar}\index{ComboTabBar@{ComboTabBar}}
+}
+
+
+The \hyperlink{class_combo_tab_bar}{ComboTabBar} class is mixed of a pinned tabbar and a normal scrollable tabbar.  
+
+
+
+
+{\ttfamily \#include $<$combotabbar.h$>$}
+
+Inheritance diagram for ComboTabBar:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{class_combo_tab_bar}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_combo_tab_bar_a1b4d1e5b7dbc95dcf040b481e00760bc}{SizeType} \{ \par
+{\bfseries PinnedTabWidth}, 
+{\bfseries ActiveTabMinimumWidth}, 
+{\bfseries NormalTabMinimumWidth}, 
+{\bfseries NormalTabMaximumWidth}, 
+\par
+{\bfseries OverflowedTabWidth}, 
+\hyperlink{class_combo_tab_bar_a1b4d1e5b7dbc95dcf040b481e00760bcaad4e405225830026a514d146b600b955}{ExtraReservedWidth}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_combo_tab_bar_a9cacd6e9340dfff7f356ad28b9e71030}{
+void {\bfseries setUpLayout} ()}
+\label{class_combo_tab_bar_a9cacd6e9340dfff7f356ad28b9e71030}
+
+\item 
+void \hyperlink{class_combo_tab_bar_a67abbf211f68ffe53c10654311a95621}{ensureVisible} (int index=-\/1, int xmargin=-\/1)
+\item 
+\hypertarget{class_combo_tab_bar_af87d91e7b17e8d5f192f7f0b89c26047}{
+void {\bfseries setCurrentIndex} (int index)}
+\label{class_combo_tab_bar_af87d91e7b17e8d5f192f7f0b89c26047}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_combo_tab_bar_a94f5ffd04222be4711aa86c43dd8c2c8}{
+void {\bfseries overFlowChanged} (bool overFlow)}
+\label{class_combo_tab_bar_a94f5ffd04222be4711aa86c43dd8c2c8}
+
+\item 
+\hypertarget{class_combo_tab_bar_a809f0e76133375268a91fab6764f8974}{
+void {\bfseries currentChanged} (int index)}
+\label{class_combo_tab_bar_a809f0e76133375268a91fab6764f8974}
+
+\item 
+\hypertarget{class_combo_tab_bar_a109612f4651a809579d58e214693ec4b}{
+void {\bfseries tabCloseRequested} (int index)}
+\label{class_combo_tab_bar_a109612f4651a809579d58e214693ec4b}
+
+\item 
+\hypertarget{class_combo_tab_bar_a996feb2cdfac31b11b4862a889ca1578}{
+void {\bfseries tabMoved} (int from, int to)}
+\label{class_combo_tab_bar_a996feb2cdfac31b11b4862a889ca1578}
+
+\item 
+\hypertarget{class_combo_tab_bar_a4f8d44211878ebcbaa83c6f410a6d6c3}{
+void {\bfseries scrollBarValueChanged} (int value)}
+\label{class_combo_tab_bar_a4f8d44211878ebcbaa83c6f410a6d6c3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_combo_tab_bar_ad215b46a7b36de7254e84a5faeda3271}{
+{\bfseries ComboTabBar} (\hyperlink{class_q_widget}{QWidget} $\ast$parent=0)}
+\label{class_combo_tab_bar_ad215b46a7b36de7254e84a5faeda3271}
+
+\item 
+\hypertarget{class_combo_tab_bar_a0778ead49aac16e76a52e064d4456e38}{
+int {\bfseries addTab} (const QString \&text)}
+\label{class_combo_tab_bar_a0778ead49aac16e76a52e064d4456e38}
+
+\item 
+\hypertarget{class_combo_tab_bar_aa9d7ea42b1140110816427d054573c22}{
+int {\bfseries addTab} (const QIcon \&icon, const QString \&text)}
+\label{class_combo_tab_bar_aa9d7ea42b1140110816427d054573c22}
+
+\item 
+\hypertarget{class_combo_tab_bar_a217ce12ede48579d0093224c056bc22b}{
+int {\bfseries insertTab} (int index, const QString \&text)}
+\label{class_combo_tab_bar_a217ce12ede48579d0093224c056bc22b}
+
+\item 
+\hypertarget{class_combo_tab_bar_aadb37fbf2993cb630e38f1e5e8babb9f}{
+int {\bfseries insertTab} (int index, const QIcon \&icon, const QString \&text, bool pinned=false)}
+\label{class_combo_tab_bar_aadb37fbf2993cb630e38f1e5e8babb9f}
+
+\item 
+\hypertarget{class_combo_tab_bar_a4ea37ffc1a20344bb381ebe476290c73}{
+void {\bfseries removeTab} (int index)}
+\label{class_combo_tab_bar_a4ea37ffc1a20344bb381ebe476290c73}
+
+\item 
+\hypertarget{class_combo_tab_bar_a3461f38651ae174bd65fe74c2afb74a1}{
+void {\bfseries moveTab} (int from, int to)}
+\label{class_combo_tab_bar_a3461f38651ae174bd65fe74c2afb74a1}
+
+\item 
+\hypertarget{class_combo_tab_bar_aa0a9af0b7c063804dd7e7c5a2f410e6a}{
+bool {\bfseries isTabEnabled} (int index) const }
+\label{class_combo_tab_bar_aa0a9af0b7c063804dd7e7c5a2f410e6a}
+
+\item 
+\hypertarget{class_combo_tab_bar_adec9ff85e73e28ca1446a5ed906a9465}{
+void {\bfseries setTabEnabled} (int index, bool enabled)}
+\label{class_combo_tab_bar_adec9ff85e73e28ca1446a5ed906a9465}
+
+\item 
+\hypertarget{class_combo_tab_bar_afc67238651ecdce59e33503618580137}{
+QColor {\bfseries tabTextColor} (int index) const }
+\label{class_combo_tab_bar_afc67238651ecdce59e33503618580137}
+
+\item 
+\hypertarget{class_combo_tab_bar_a6634e7fb2e38f48daa439a89db5c24af}{
+void {\bfseries setTabTextColor} (int index, const QColor \&color)}
+\label{class_combo_tab_bar_a6634e7fb2e38f48daa439a89db5c24af}
+
+\item 
+\hypertarget{class_combo_tab_bar_a2301662a027572fb685937a717a05f7b}{
+QRect {\bfseries tabRect} (int index) const }
+\label{class_combo_tab_bar_a2301662a027572fb685937a717a05f7b}
+
+\item 
+int \hyperlink{class_combo_tab_bar_a2ba10737ac0dd8848f97434a9c5814f3}{tabAt} (const QPoint \&pos) const 
+\item 
+bool \hyperlink{class_combo_tab_bar_a737d267e4cd82efad188b2d5ce601810}{emptyArea} (const QPoint \&pos) const 
+\item 
+\hypertarget{class_combo_tab_bar_aa768d3a41df71b0d3179f529ff1b0a2f}{
+int {\bfseries mainTabBarCurrentIndex} () const }
+\label{class_combo_tab_bar_aa768d3a41df71b0d3179f529ff1b0a2f}
+
+\item 
+\hypertarget{class_combo_tab_bar_a71a77325f22110bf223f2f9e0faf52bd}{
+int {\bfseries currentIndex} () const }
+\label{class_combo_tab_bar_a71a77325f22110bf223f2f9e0faf52bd}
+
+\item 
+\hypertarget{class_combo_tab_bar_ad30535b80bc7a75ea26106218b8f9110}{
+int {\bfseries count} () const }
+\label{class_combo_tab_bar_ad30535b80bc7a75ea26106218b8f9110}
+
+\item 
+\hypertarget{class_combo_tab_bar_a84a0e639e0c7fda3e7d7b8b37aa4c4b0}{
+void {\bfseries setDrawBase} (bool drawTheBase)}
+\label{class_combo_tab_bar_a84a0e639e0c7fda3e7d7b8b37aa4c4b0}
+
+\item 
+\hypertarget{class_combo_tab_bar_a6586b51cbab448ae0b36ed01d9103845}{
+bool {\bfseries drawBase} () const }
+\label{class_combo_tab_bar_a6586b51cbab448ae0b36ed01d9103845}
+
+\item 
+\hypertarget{class_combo_tab_bar_a3522f6e767f5d4d55de994efdcceb352}{
+Qt::TextElideMode {\bfseries elideMode} () const }
+\label{class_combo_tab_bar_a3522f6e767f5d4d55de994efdcceb352}
+
+\item 
+\hypertarget{class_combo_tab_bar_a5756d7f84f613b550078861753512ee5}{
+void {\bfseries setElideMode} (Qt::TextElideMode elide)}
+\label{class_combo_tab_bar_a5756d7f84f613b550078861753512ee5}
+
+\item 
+\hypertarget{class_combo_tab_bar_a1f8455c764f3547adf12e8c5106527dd}{
+QString {\bfseries tabText} (int index) const }
+\label{class_combo_tab_bar_a1f8455c764f3547adf12e8c5106527dd}
+
+\item 
+\hypertarget{class_combo_tab_bar_ab23be3e427bcecdd42cb2a3d3cd892bd}{
+void {\bfseries setTabText} (int index, const QString \&text)}
+\label{class_combo_tab_bar_ab23be3e427bcecdd42cb2a3d3cd892bd}
+
+\item 
+\hypertarget{class_combo_tab_bar_a99b60793e4feb4358c7993dddd07333f}{
+void {\bfseries setTabToolTip} (int index, const QString \&tip)}
+\label{class_combo_tab_bar_a99b60793e4feb4358c7993dddd07333f}
+
+\item 
+\hypertarget{class_combo_tab_bar_a1070e2666aa5bed589ef3640ae7a2b78}{
+QString {\bfseries tabToolTip} (int index) const }
+\label{class_combo_tab_bar_a1070e2666aa5bed589ef3640ae7a2b78}
+
+\item 
+\hypertarget{class_combo_tab_bar_aab097d0b41ae4915544eaead6e3d87fc}{
+bool {\bfseries tabsClosable} () const }
+\label{class_combo_tab_bar_aab097d0b41ae4915544eaead6e3d87fc}
+
+\item 
+\hypertarget{class_combo_tab_bar_ac4178c65419140ea5cef414d86167157}{
+void {\bfseries setTabsClosable} (bool closable)}
+\label{class_combo_tab_bar_ac4178c65419140ea5cef414d86167157}
+
+\item 
+\hypertarget{class_combo_tab_bar_a7859982ef655a22efb3d694437d20cd3}{
+void {\bfseries setTabButton} (int index, QTabBar::ButtonPosition position, \hyperlink{class_q_widget}{QWidget} $\ast$widget)}
+\label{class_combo_tab_bar_a7859982ef655a22efb3d694437d20cd3}
+
+\item 
+\hypertarget{class_combo_tab_bar_ad5f5c72528c099547dcd4d76883cac34}{
+\hyperlink{class_q_widget}{QWidget} $\ast$ {\bfseries tabButton} (int index, QTabBar::ButtonPosition position) const }
+\label{class_combo_tab_bar_ad5f5c72528c099547dcd4d76883cac34}
+
+\item 
+\hypertarget{class_combo_tab_bar_a12be78eb2cccb159886662948729f40b}{
+QTabBar::SelectionBehavior {\bfseries selectionBehaviorOnRemove} () const }
+\label{class_combo_tab_bar_a12be78eb2cccb159886662948729f40b}
+
+\item 
+\hypertarget{class_combo_tab_bar_a82daa9a45f727324ab5116288f19e33b}{
+void {\bfseries setSelectionBehaviorOnRemove} (QTabBar::SelectionBehavior behavior)}
+\label{class_combo_tab_bar_a82daa9a45f727324ab5116288f19e33b}
+
+\item 
+\hypertarget{class_combo_tab_bar_a71f4f34d1dc4701d3e6ca51c1c460479}{
+bool {\bfseries expanding} () const }
+\label{class_combo_tab_bar_a71f4f34d1dc4701d3e6ca51c1c460479}
+
+\item 
+\hypertarget{class_combo_tab_bar_a565062955f4c49d62498a7f542a7cdd3}{
+void {\bfseries setExpanding} (bool enabled)}
+\label{class_combo_tab_bar_a565062955f4c49d62498a7f542a7cdd3}
+
+\item 
+\hypertarget{class_combo_tab_bar_ac1892c7f5c092995acd1f2efb8911a66}{
+bool {\bfseries isMovable} () const }
+\label{class_combo_tab_bar_ac1892c7f5c092995acd1f2efb8911a66}
+
+\item 
+\hypertarget{class_combo_tab_bar_a0e551055d8ac21acb511fbc54b9218a8}{
+void {\bfseries setMovable} (bool movable)}
+\label{class_combo_tab_bar_a0e551055d8ac21acb511fbc54b9218a8}
+
+\item 
+\hypertarget{class_combo_tab_bar_a72020d7411a8fed3927e4bef752cccf7}{
+bool {\bfseries documentMode} () const }
+\label{class_combo_tab_bar_a72020d7411a8fed3927e4bef752cccf7}
+
+\item 
+\hypertarget{class_combo_tab_bar_ae63a0415722d0a9e7cb078f67fb5ce8e}{
+void {\bfseries setDocumentMode} (bool set)}
+\label{class_combo_tab_bar_ae63a0415722d0a9e7cb078f67fb5ce8e}
+
+\item 
+\hypertarget{class_combo_tab_bar_ad14aa7e400982a67345b64abb1e9b82d}{
+int {\bfseries pinnedTabsCount} () const }
+\label{class_combo_tab_bar_ad14aa7e400982a67345b64abb1e9b82d}
+
+\item 
+\hypertarget{class_combo_tab_bar_a190dfb072e02cd1064952881dc582ae3}{
+int {\bfseries normalTabsCount} () const }
+\label{class_combo_tab_bar_a190dfb072e02cd1064952881dc582ae3}
+
+\item 
+\hypertarget{class_combo_tab_bar_a9c4413dce9ceba2b42f4cb9fe2eb6c03}{
+bool {\bfseries isPinned} (int index) const }
+\label{class_combo_tab_bar_a9c4413dce9ceba2b42f4cb9fe2eb6c03}
+
+\item 
+\hypertarget{class_combo_tab_bar_ac6f8d027c5eb9eb4976b7f26460749b2}{
+void {\bfseries setObjectName} (const QString \&name)}
+\label{class_combo_tab_bar_ac6f8d027c5eb9eb4976b7f26460749b2}
+
+\item 
+\hypertarget{class_combo_tab_bar_a239981b4576b3bf469e88c950cdf9379}{
+void {\bfseries setMouseTracking} (bool enable)}
+\label{class_combo_tab_bar_a239981b4576b3bf469e88c950cdf9379}
+
+\item 
+\hypertarget{class_combo_tab_bar_ae7a4dde371b625f854275f230520609b}{
+void {\bfseries insertCloseButton} (int index)}
+\label{class_combo_tab_bar_ae7a4dde371b625f854275f230520609b}
+
+\item 
+\hypertarget{class_combo_tab_bar_aad29454b7b4152316af1bceec0ea65d1}{
+void {\bfseries setCloseButtonsToolTip} (const QString \&tip)}
+\label{class_combo_tab_bar_aad29454b7b4152316af1bceec0ea65d1}
+
+\item 
+\hypertarget{class_combo_tab_bar_a6fabbea88ffb64b3c3767f2b40d66174}{
+void {\bfseries enableBluredBackground} (bool enable)}
+\label{class_combo_tab_bar_a6fabbea88ffb64b3c3767f2b40d66174}
+
+\item 
+\hypertarget{class_combo_tab_bar_a75522212d8babac303f31b5aca1f855f}{
+QTabBar::ButtonPosition {\bfseries iconButtonPosition} ()}
+\label{class_combo_tab_bar_a75522212d8babac303f31b5aca1f855f}
+
+\item 
+\hypertarget{class_combo_tab_bar_a1c8c4005030156e07db4b49ab5324714}{
+QTabBar::ButtonPosition {\bfseries closeButtonPosition} ()}
+\label{class_combo_tab_bar_a1c8c4005030156e07db4b49ab5324714}
+
+\item 
+\hypertarget{class_combo_tab_bar_ac3ba8a576a1bde1b246701f4c1708232}{
+bool {\bfseries validIndex} (int index) const }
+\label{class_combo_tab_bar_ac3ba8a576a1bde1b246701f4c1708232}
+
+\item 
+\hypertarget{class_combo_tab_bar_aeef10920a84647ed1b457b8b9cfb19a9}{
+void {\bfseries setCurrentNextEnabledIndex} (int offset)}
+\label{class_combo_tab_bar_aeef10920a84647ed1b457b8b9cfb19a9}
+
+\item 
+\hypertarget{class_combo_tab_bar_a380190b950a2070287ee79cf8ff3b47d}{
+bool {\bfseries usesScrollButtons} () const }
+\label{class_combo_tab_bar_a380190b950a2070287ee79cf8ff3b47d}
+
+\item 
+\hypertarget{class_combo_tab_bar_ad2fd8ce2abc792dca03735ff81c5d47e}{
+void {\bfseries setUsesScrollButtons} (bool useButtons)}
+\label{class_combo_tab_bar_ad2fd8ce2abc792dca03735ff81c5d47e}
+
+\item 
+\hypertarget{class_combo_tab_bar_a033143d446119c9145bb4ee04599c057}{
+bool {\bfseries isDragInProgress} () const }
+\label{class_combo_tab_bar_a033143d446119c9145bb4ee04599c057}
+
+\item 
+\hypertarget{class_combo_tab_bar_a3fdc1a1707a2e2b6c46340884fad4065}{
+bool {\bfseries isMainBarOverflowed} () const }
+\label{class_combo_tab_bar_a3fdc1a1707a2e2b6c46340884fad4065}
+
+\item 
+int \hyperlink{class_combo_tab_bar_add04fdbda2e634592d3ba6c0a3083e46}{cornerWidth} (Qt::Corner corner) const 
+\item 
+void \hyperlink{class_combo_tab_bar_a3371dbfa9365711b28f7440dbd4d36e6}{addCornerWidget} (\hyperlink{class_q_widget}{QWidget} $\ast$widget, Qt::Corner corner)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_combo_tab_bar_abe7ceb107e863285c858cb24bc895844}{
+int {\bfseries mainTabBarWidth} () const }
+\label{class_combo_tab_bar_abe7ceb107e863285c858cb24bc895844}
+
+\item 
+\hypertarget{class_combo_tab_bar_a3509e98c3e69c1f708b342d39aef3e7e}{
+int {\bfseries pinTabBarWidth} () const }
+\label{class_combo_tab_bar_a3509e98c3e69c1f708b342d39aef3e7e}
+
+\item 
+\hypertarget{class_combo_tab_bar_a3d365b44cdd5420ef9237cf483b3aab4}{
+void {\bfseries wheelEvent} (QWheelEvent $\ast$event)}
+\label{class_combo_tab_bar_a3d365b44cdd5420ef9237cf483b3aab4}
+
+\item 
+\hypertarget{class_combo_tab_bar_a5b078b04fc16e00b91fbea9b3c062113}{
+void {\bfseries showEvent} (QShowEvent $\ast$event)}
+\label{class_combo_tab_bar_a5b078b04fc16e00b91fbea9b3c062113}
+
+\item 
+\hypertarget{class_combo_tab_bar_a544941e84284cad88c47eb3d992a0899}{
+void {\bfseries enterEvent} (QEvent $\ast$event)}
+\label{class_combo_tab_bar_a544941e84284cad88c47eb3d992a0899}
+
+\item 
+\hypertarget{class_combo_tab_bar_a6e1abbacc023355aa7db27f1499ef7f3}{
+void {\bfseries leaveEvent} (QEvent $\ast$event)}
+\label{class_combo_tab_bar_a6e1abbacc023355aa7db27f1499ef7f3}
+
+\item 
+\hypertarget{class_combo_tab_bar_a2a1b7d5605c97f99238d2bcbb8ab9c41}{
+bool {\bfseries eventFilter} (QObject $\ast$obj, QEvent $\ast$ev)}
+\label{class_combo_tab_bar_a2a1b7d5605c97f99238d2bcbb8ab9c41}
+
+\item 
+\hypertarget{class_combo_tab_bar_a591bd7d1efe029de98eb6e140286a58d}{
+void {\bfseries paintEvent} (QPaintEvent $\ast$ev)}
+\label{class_combo_tab_bar_a591bd7d1efe029de98eb6e140286a58d}
+
+\item 
+virtual int \hyperlink{class_combo_tab_bar_abfe5f8784d0433283bca4c087f0d2b42}{comboTabBarPixelMetric} (\hyperlink{class_combo_tab_bar_a1b4d1e5b7dbc95dcf040b481e00760bc}{SizeType} sizeType) const 
+\item 
+virtual QSize \hyperlink{class_combo_tab_bar_aedd5c86124231d4d5df2bbc297edf046}{tabSizeHint} (int index, bool fast=false) const 
+\item 
+\hypertarget{class_combo_tab_bar_a9d85cfc014fde05f25de00854f3c2fb3}{
+virtual void {\bfseries tabInserted} (int index)}
+\label{class_combo_tab_bar_a9d85cfc014fde05f25de00854f3c2fb3}
+
+\item 
+\hypertarget{class_combo_tab_bar_a81e98edcbd2467a08cf70e8af942a9c7}{
+virtual void {\bfseries tabRemoved} (int index)}
+\label{class_combo_tab_bar_a81e98edcbd2467a08cf70e8af942a9c7}
+
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_combo_tab_bar_a6c31d71f78a5bec1c76dfb4d266464e3}{
+int {\bfseries currentIndex}}
+\label{class_combo_tab_bar_a6c31d71f78a5bec1c76dfb4d266464e3}
+
+\item 
+\hypertarget{class_combo_tab_bar_afa1a0d26530e0d4d21dee3273abcd831}{
+int {\bfseries count}}
+\label{class_combo_tab_bar_afa1a0d26530e0d4d21dee3273abcd831}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_combo_tab_bar_afe1a53dbe57271afbb725b609d74623a}{
+void {\bfseries setMinimumWidths} ()}
+\label{class_combo_tab_bar_afe1a53dbe57271afbb725b609d74623a}
+
+\item 
+\hypertarget{class_combo_tab_bar_ae8020108ae4d79d1f9337344d4764600}{
+void {\bfseries slotCurrentChanged} (int index)}
+\label{class_combo_tab_bar_ae8020108ae4d79d1f9337344d4764600}
+
+\item 
+\hypertarget{class_combo_tab_bar_afa7c13566d5e9f261b37a37a217a3086}{
+void {\bfseries slotTabCloseRequested} (int index)}
+\label{class_combo_tab_bar_afa7c13566d5e9f261b37a37a217a3086}
+
+\item 
+\hypertarget{class_combo_tab_bar_a29d5becee02b839d98287edd0499ab10}{
+void {\bfseries slotTabMoved} (int from, int to)}
+\label{class_combo_tab_bar_a29d5becee02b839d98287edd0499ab10}
+
+\item 
+\hypertarget{class_combo_tab_bar_ab4a00eed0da98fac7cc68deab83b93b5}{
+void {\bfseries closeTabFromButton} ()}
+\label{class_combo_tab_bar_ab4a00eed0da98fac7cc68deab83b93b5}
+
+\item 
+\hypertarget{class_combo_tab_bar_a0735e73e3f67b34a39237ebb6b6d3040}{
+void {\bfseries updateTabBars} ()}
+\label{class_combo_tab_bar_a0735e73e3f67b34a39237ebb6b6d3040}
+
+\item 
+\hypertarget{class_combo_tab_bar_afca20d3ddbd5220cd1c5abb347d68693}{
+void {\bfseries emitOverFlowChanged} ()}
+\label{class_combo_tab_bar_afca20d3ddbd5220cd1c5abb347d68693}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_combo_tab_bar_a3aa53aae4c3040bb27ac6065267b4db1}{
+\hyperlink{class_tab_bar_helper}{TabBarHelper} $\ast$ {\bfseries mainTabBar} () const }
+\label{class_combo_tab_bar_a3aa53aae4c3040bb27ac6065267b4db1}
+
+\item 
+\hyperlink{class_tab_bar_helper}{TabBarHelper} $\ast$ \hyperlink{class_combo_tab_bar_a262d76912a414546f74bb804de6abe9c}{localTabBar} (int index=-\/1) const 
+\item 
+int \hyperlink{class_combo_tab_bar_ac37381dc0f5d788b9d21508fecec6013}{toLocalIndex} (int globalIndex) const 
+\item 
+\hypertarget{class_combo_tab_bar_a146ca78e63ab40b476685be5d87166f1}{
+void {\bfseries updatePinnedTabBarVisibility} ()}
+\label{class_combo_tab_bar_a146ca78e63ab40b476685be5d87166f1}
+
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_combo_tab_bar_acaa83471248b7e20390a8d0e8b9dc27e}{
+QHBoxLayout $\ast$ {\bfseries m\_\-mainLayout}}
+\label{class_combo_tab_bar_acaa83471248b7e20390a8d0e8b9dc27e}
+
+\item 
+\hypertarget{class_combo_tab_bar_afdcf007a49d034baffb3a5794a236381}{
+QHBoxLayout $\ast$ {\bfseries m\_\-leftLayout}}
+\label{class_combo_tab_bar_afdcf007a49d034baffb3a5794a236381}
+
+\item 
+\hypertarget{class_combo_tab_bar_a558bc651311777d9a3ad392b5ddbaa94}{
+QHBoxLayout $\ast$ {\bfseries m\_\-rightLayout}}
+\label{class_combo_tab_bar_a558bc651311777d9a3ad392b5ddbaa94}
+
+\item 
+\hypertarget{class_combo_tab_bar_a6cc9c2a3a16201cd0984f5bd41258042}{
+\hyperlink{class_q_widget}{QWidget} $\ast$ {\bfseries m\_\-leftContainer}}
+\label{class_combo_tab_bar_a6cc9c2a3a16201cd0984f5bd41258042}
+
+\item 
+\hypertarget{class_combo_tab_bar_a66a2efc3eed4095e7f9862656de1a332}{
+\hyperlink{class_q_widget}{QWidget} $\ast$ {\bfseries m\_\-rightContainer}}
+\label{class_combo_tab_bar_a66a2efc3eed4095e7f9862656de1a332}
+
+\item 
+\hypertarget{class_combo_tab_bar_a9dbfacde3077b92ba3044623463b9257}{
+\hyperlink{class_tab_bar_helper}{TabBarHelper} $\ast$ {\bfseries m\_\-mainTabBar}}
+\label{class_combo_tab_bar_a9dbfacde3077b92ba3044623463b9257}
+
+\item 
+\hypertarget{class_combo_tab_bar_a76d46b2305c97bbe34108f12b7a29643}{
+\hyperlink{class_tab_bar_helper}{TabBarHelper} $\ast$ {\bfseries m\_\-pinnedTabBar}}
+\label{class_combo_tab_bar_a76d46b2305c97bbe34108f12b7a29643}
+
+\item 
+\hypertarget{class_combo_tab_bar_a13160404b902adde21884aa1a09c2302}{
+\hyperlink{class_tab_bar_scroll_widget}{TabBarScrollWidget} $\ast$ {\bfseries m\_\-mainTabBarWidget}}
+\label{class_combo_tab_bar_a13160404b902adde21884aa1a09c2302}
+
+\item 
+\hypertarget{class_combo_tab_bar_a6d60e544d64cb0c4610983a3008b6e3a}{
+\hyperlink{class_tab_bar_scroll_widget}{TabBarScrollWidget} $\ast$ {\bfseries m\_\-pinnedTabBarWidget}}
+\label{class_combo_tab_bar_a6d60e544d64cb0c4610983a3008b6e3a}
+
+\item 
+\hypertarget{class_combo_tab_bar_aaa6fd8c84151411f93cbc1909a77410c}{
+QString {\bfseries m\_\-closeButtonsToolTip}}
+\label{class_combo_tab_bar_aaa6fd8c84151411f93cbc1909a77410c}
+
+\item 
+\hypertarget{class_combo_tab_bar_a51e2466e5de0923218a679b0299ea7ec}{
+bool {\bfseries m\_\-mainBarOverFlowed}}
+\label{class_combo_tab_bar_a51e2466e5de0923218a679b0299ea7ec}
+
+\item 
+\hypertarget{class_combo_tab_bar_acf0bfd89fb53d67b4aa02d4a992bae25}{
+bool {\bfseries m\_\-lastAppliedOverflow}}
+\label{class_combo_tab_bar_acf0bfd89fb53d67b4aa02d4a992bae25}
+
+\item 
+\hypertarget{class_combo_tab_bar_ab5f03aa77a741a36934334176badccaf}{
+bool {\bfseries m\_\-usesScrollButtons}}
+\label{class_combo_tab_bar_ab5f03aa77a741a36934334176badccaf}
+
+\item 
+\hypertarget{class_combo_tab_bar_a994055730c9a831aab48cee1ec91d74f}{
+bool {\bfseries m\_\-bluredBackground}}
+\label{class_combo_tab_bar_a994055730c9a831aab48cee1ec91d74f}
+
+\item 
+\hypertarget{class_combo_tab_bar_aaa4bb25bb3d32e338697d4c317d6135a}{
+bool {\bfseries m\_\-blockCurrentChangedSignal}}
+\label{class_combo_tab_bar_aaa4bb25bb3d32e338697d4c317d6135a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_combo_tab_bar_a2c48367f51e58bbeaea3140bd86b5326}{
+class \hyperlink{class_combo_tab_bar_a2c48367f51e58bbeaea3140bd86b5326}{TabBarHelper}}
+\label{class_combo_tab_bar_a2c48367f51e58bbeaea3140bd86b5326}
+
+\item 
+\hypertarget{class_combo_tab_bar_ab30c27851131b8d8bec48bee17832d43}{
+class \hyperlink{class_combo_tab_bar_ab30c27851131b8d8bec48bee17832d43}{TabStackedWidget}}
+\label{class_combo_tab_bar_ab30c27851131b8d8bec48bee17832d43}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{class_combo_tab_bar}{ComboTabBar} class is mixed of a pinned tabbar and a normal scrollable tabbar. It has a horizontal layout containing: m\_\-leftContainer $|$ m\_\-pinnedTabBarWidget $|$ m\_\-mainTabBarWidget $|$ m\_\-rightContainer
+
+
+\begin{DoxyItemize}
+\item Left/Right Containers: Use \hyperlink{class_combo_tab_bar_a3371dbfa9365711b28f7440dbd4d36e6}{addCornerWidget()} to add widget to m\_\-leftContainer or m\_\-rightContainer
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Pinned/Main TabBarWidgets: They are of type \hyperlink{class_tab_bar_scroll_widget}{TabBarScrollWidget}, and they add scrollbar to \hyperlink{class_q_tab_bar}{QTabBar} 
+\end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_combo_tab_bar_a1b4d1e5b7dbc95dcf040b481e00760bc}{
+\index{ComboTabBar@{ComboTabBar}!SizeType@{SizeType}}
+\index{SizeType@{SizeType}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{SizeType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf ComboTabBar::SizeType}}}
+\label{class_combo_tab_bar_a1b4d1e5b7dbc95dcf040b481e00760bc}
+
+
+used by \hyperlink{class_combo_tab_bar_abfe5f8784d0433283bca4c087f0d2b42}{comboTabBarPixelMetric()} 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{ExtraReservedWidth@{ExtraReservedWidth}!ComboTabBar@{ComboTabBar}}\index{ComboTabBar@{ComboTabBar}!ExtraReservedWidth@{ExtraReservedWidth}}\item[{\em 
+\hypertarget{class_combo_tab_bar_a1b4d1e5b7dbc95dcf040b481e00760bcaad4e405225830026a514d146b600b955}{
+ExtraReservedWidth}
+\label{class_combo_tab_bar_a1b4d1e5b7dbc95dcf040b481e00760bcaad4e405225830026a514d146b600b955}
+}]e.g.: reserved space for \char`\"{}add tab\char`\"{} and \char`\"{}list tab\char`\"{} buttons \end{description}
+\end{Desc}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_combo_tab_bar_a3371dbfa9365711b28f7440dbd4d36e6}{
+\index{ComboTabBar@{ComboTabBar}!addCornerWidget@{addCornerWidget}}
+\index{addCornerWidget@{addCornerWidget}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{addCornerWidget}]{\setlength{\rightskip}{0pt plus 5cm}void ComboTabBar::addCornerWidget ({\bf QWidget} $\ast$ {\em widget}, \/  Qt::Corner {\em corner})}}
+\label{class_combo_tab_bar_a3371dbfa9365711b28f7440dbd4d36e6}
+
+
+Add widget to the left/right corner. 
+
+\hypertarget{class_combo_tab_bar_abfe5f8784d0433283bca4c087f0d2b42}{
+\index{ComboTabBar@{ComboTabBar}!comboTabBarPixelMetric@{comboTabBarPixelMetric}}
+\index{comboTabBarPixelMetric@{comboTabBarPixelMetric}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{comboTabBarPixelMetric}]{\setlength{\rightskip}{0pt plus 5cm}virtual int ComboTabBar::comboTabBarPixelMetric ({\bf SizeType} {\em sizeType}) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{class_combo_tab_bar_abfe5f8784d0433283bca4c087f0d2b42}
+
+
+should returns width for each SizeType, if UI is not completely initialized then it have to return -\/1 (at least for PinnedTabWidth) 
+
+\hypertarget{class_combo_tab_bar_add04fdbda2e634592d3ba6c0a3083e46}{
+\index{ComboTabBar@{ComboTabBar}!cornerWidth@{cornerWidth}}
+\index{cornerWidth@{cornerWidth}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{cornerWidth}]{\setlength{\rightskip}{0pt plus 5cm}int ComboTabBar::cornerWidth (Qt::Corner {\em corner}) const}}
+\label{class_combo_tab_bar_add04fdbda2e634592d3ba6c0a3083e46}
+
+
+Width of all widgets in the corner. 
+
+\hypertarget{class_combo_tab_bar_a737d267e4cd82efad188b2d5ce601810}{
+\index{ComboTabBar@{ComboTabBar}!emptyArea@{emptyArea}}
+\index{emptyArea@{emptyArea}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{emptyArea}]{\setlength{\rightskip}{0pt plus 5cm}bool ComboTabBar::emptyArea (const QPoint \& {\em pos}) const}}
+\label{class_combo_tab_bar_a737d267e4cd82efad188b2d5ce601810}
+
+
+Returns true if there is an empty area at pos (returns false if there are buttons or other widgets on the pos). 
+
+\hypertarget{class_combo_tab_bar_a67abbf211f68ffe53c10654311a95621}{
+\index{ComboTabBar@{ComboTabBar}!ensureVisible@{ensureVisible}}
+\index{ensureVisible@{ensureVisible}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{ensureVisible}]{\setlength{\rightskip}{0pt plus 5cm}void ComboTabBar::ensureVisible (int {\em index} = {\ttfamily -\/1}, \/  int {\em xmargin} = {\ttfamily -\/1})\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}
+\label{class_combo_tab_bar_a67abbf211f68ffe53c10654311a95621}
+
+
+scrolls to index or currentIndex() if index is -\/1 (default) 
+
+\hypertarget{class_combo_tab_bar_a262d76912a414546f74bb804de6abe9c}{
+\index{ComboTabBar@{ComboTabBar}!localTabBar@{localTabBar}}
+\index{localTabBar@{localTabBar}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{localTabBar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TabBarHelper}$\ast$ ComboTabBar::localTabBar (int {\em index} = {\ttfamily -\/1}) const\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_combo_tab_bar_a262d76912a414546f74bb804de6abe9c}
+
+
+returns internal \hyperlink{class_tab_bar_helper}{TabBarHelper} related to index 
+
+\hypertarget{class_combo_tab_bar_a2ba10737ac0dd8848f97434a9c5814f3}{
+\index{ComboTabBar@{ComboTabBar}!tabAt@{tabAt}}
+\index{tabAt@{tabAt}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{tabAt}]{\setlength{\rightskip}{0pt plus 5cm}int ComboTabBar::tabAt (const QPoint \& {\em pos}) const}}
+\label{class_combo_tab_bar_a2ba10737ac0dd8848f97434a9c5814f3}
+
+
+Returns tab index at pos, or -\/1. 
+
+\hypertarget{class_combo_tab_bar_aedd5c86124231d4d5df2bbc297edf046}{
+\index{ComboTabBar@{ComboTabBar}!tabSizeHint@{tabSizeHint}}
+\index{tabSizeHint@{tabSizeHint}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{tabSizeHint}]{\setlength{\rightskip}{0pt plus 5cm}virtual QSize ComboTabBar::tabSizeHint (int {\em index}, \/  bool {\em fast} = {\ttfamily false}) const\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}
+\label{class_combo_tab_bar_aedd5c86124231d4d5df2bbc297edf046}
+
+
+Notice: Use \char`\"{}fast = true\char`\"{} when all pinned tabs have the same size, and also all normal tabs have the same size. 
+
+\hypertarget{class_combo_tab_bar_ac37381dc0f5d788b9d21508fecec6013}{
+\index{ComboTabBar@{ComboTabBar}!toLocalIndex@{toLocalIndex}}
+\index{toLocalIndex@{toLocalIndex}!ComboTabBar@{ComboTabBar}}
+\subsubsection[{toLocalIndex}]{\setlength{\rightskip}{0pt plus 5cm}int ComboTabBar::toLocalIndex (int {\em globalIndex}) const\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_combo_tab_bar_ac37381dc0f5d788b9d21508fecec6013}
+
+
+translate globalIndex(=index related to \hyperlink{class_combo_tab_bar}{ComboTabBar}) to localIndex(=index related to internal \hyperlink{class_tab_bar_helper}{TabBarHelper}) 
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+E:/Programming/QupZilla-\/Project/qupzilla/src/lib/tabwidget/combotabbar.h\end{DoxyCompactItemize}
